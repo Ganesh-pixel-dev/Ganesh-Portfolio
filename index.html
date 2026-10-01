@@ -4,350 +4,126 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ganesh Chandra Bera | Systems Architect & Civic Tech</title>
-    <meta name="description" content="Ganesh Chandra Bera — Full Stack Developer, AI Forensics Specialist & Civic Technologist. I build systems that fix what's broken." />
+    <title>Ganesh Chandra Bera — Full Stack Developer</title>
+    <meta name="description" content="Ganesh Chandra Bera — full stack developer. I build civic tools, deepfake detection, and other systems that tell people the truth." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
-    <!-- PAGE LOAD CURTAIN -->
-    <div id="loader">
-      <div class="loader-inner">
-        <div class="loader-logo">G.</div>
-        <div class="loader-tagline">BUILDING SOMETHING BETTER</div>
-        <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-      </div>
+    <div class="page">
+
+      <!-- SIDEBAR — fixed, always visible. This IS the hero, the about, and the contact. -->
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <h1 class="sb-name">Ganesh<br>Chandra<br>Bera</h1>
+          <p class="sb-role">Full stack developer</p>
+          <p class="sb-bio">I build things that tell people the truth — about their government, their photos, their own notes. Most of it started because something broken annoyed me enough to fix it.</p>
+        </div>
+
+        <dl class="sb-facts">
+          <div><dt>Focus</dt><dd>Civic systems, AI integrity</dd></div>
+          <div><dt>Core</dt><dd>Python, C/C++, JS, PHP</dd></div>
+          <div><dt>Status</dt><dd>Student, building, open for work</dd></div>
+        </dl>
+
+        <nav class="sb-nav">
+          <a href="#work" class="sb-nav-link">Work</a>
+          <a href="#log" class="sb-nav-link">Log</a>
+          <a href="#contact" class="sb-nav-link">Contact</a>
+        </nav>
+
+        <div class="sb-contact">
+          <a href="mailto:ganeshchandrabera43@gmail.com">ganeshchandrabera43@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ganesh-chandra-bera-67a36a276" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Ganesh-pixel-dev" target="_blank">GitHub</a>
+        </div>
+      </aside>
+
+      <!-- CONTENT — scrolls. -->
+      <main class="content">
+
+        <section id="work" class="work-section">
+          <div class="content-label">Work</div>
+
+          <div class="project-row" data-img="/assets/sudhaar.png">
+            <span class="pr-index">01</span>
+            <div class="pr-main">
+              <h3>Sudhaar</h3>
+              <p class="pr-tag">Civic tech</p>
+              <p class="pr-line">Ward-level grievance platform. Bureaucratic friction in, accountability out. Presented at an international seminar.</p>
+            </div>
+            <a href="https://github.com/Ganesh-pixel-dev/Sudhaar" target="_blank" class="pr-link">Source →</a>
+            <img class="pr-thumb" src="/assets/sudhaar.png" alt="Sudhaar">
+          </div>
+
+          <div class="project-row" data-img="/assets/drishti.png">
+            <span class="pr-index">02</span>
+            <div class="pr-main">
+              <h3>Drishti AI</h3>
+              <p class="pr-tag">AI forensics</p>
+              <p class="pr-line">Multi-modal deepfake detection — dual-engine consensus, webcam protection. 98% localized artifact accuracy.</p>
+            </div>
+            <a href="https://github.com/Ganesh-pixel-dev/drishti_ai" target="_blank" class="pr-link">Source →</a>
+            <img class="pr-thumb" src="/assets/drishti.png" alt="Drishti AI">
+          </div>
+
+          <div class="project-row" data-img="/assets/auraboard.png">
+            <span class="pr-index">03</span>
+            <div class="pr-main">
+              <h3>AuraBoard Pro</h3>
+              <p class="pr-tag">Spatial UI · gesture control</p>
+              <p class="pr-line">Zero-latency spatial workstation on a gesture-reactive engine. 90% less input jitter than mouse-driven flows.</p>
+            </div>
+            <a href="https://github.com/Ganesh-pixel-dev/-AuraBoard-Pro" target="_blank" class="pr-link">Source →</a>
+            <img class="pr-thumb" src="/assets/auraboard.png" alt="AuraBoard Pro">
+          </div>
+
+          <div class="project-row" data-img="/assets/handconnect.png">
+            <span class="pr-index">04</span>
+            <div class="pr-main">
+              <h3>HandConnect</h3>
+              <p class="pr-tag">Accessibility · computer vision</p>
+              <p class="pr-line">Real-time hand gesture recognition and translation — a working bridge between sign language and text.</p>
+            </div>
+            <a href="https://github.com/Ganesh-pixel-dev/HandConnect-main" target="_blank" class="pr-link">Source →</a>
+            <img class="pr-thumb" src="/assets/handconnect.png" alt="HandConnect">
+          </div>
+
+          <div class="project-row" data-img="/assets/billing.png">
+            <span class="pr-index">05</span>
+            <div class="pr-main">
+              <h3>BillAssist</h3>
+              <p class="pr-tag">Business logic · full stack</p>
+              <p class="pr-line">Billing engine for real retail logic — GST, role-based access, audit-ready receipt trails.</p>
+            </div>
+            <a href="https://github.com/Ganesh-pixel-dev" target="_blank" class="pr-link">Source →</a>
+            <img class="pr-thumb" src="/assets/billing.png" alt="BillAssist">
+          </div>
+        </section>
+
+        <section id="log" class="log-section">
+          <div class="content-label">Log</div>
+          <div class="log-row"><span class="log-date">Sep 2025</span><span class="log-text"><strong>BillAssist.</strong> Full billing system from scratch. No tutorial, just a problem that needed solving.</span></div>
+          <div class="log-row"><span class="log-date">Jan 2026</span><span class="log-text"><strong>Sudhaar.</strong> First real civic system — accountability baked into the code.</span></div>
+          <div class="log-row"><span class="log-date">Apr 2026</span><span class="log-text"><strong>Drishti AI.</strong> Pivoted into AI forensics. Same mission, different battlefield.</span></div>
+          <div class="log-row"><span class="log-date">Sep 2026</span><span class="log-text"><strong>Mnemo — in progress.</strong> A RAG chatbot that cites your own notes instead of guessing. Privacy-first, still shipping.</span></div>
+        </section>
+
+        <section id="contact" class="contact-section">
+          <div class="content-label">Contact</div>
+          <p class="contact-line">Got something worth building? Email's the fastest way to reach me — I usually reply within a day.</p>
+        </section>
+
+        <footer>
+          <p>Designed &amp; built by Ganesh Chandra Bera — <span>2026</span></p>
+        </footer>
+
+      </main>
+
+      <!-- Floating hover preview -->
+      <div class="hover-preview" id="hoverPreview"><img id="hoverPreviewImg" src="" alt=""></div>
+
     </div>
-
-    <!-- Scroll progress bar -->
-    <div id="scroll-progress"></div>
-
-    <!-- Cursor system -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-ring"><span id="cursor-label">VIEW</span></div>
-
-    <!-- Background System -->
-    <div id="canvas-container">
-      <div class="nebula-blob blob-1"></div>
-      <div class="nebula-blob blob-2"></div>
-      <canvas id="particle-canvas"></canvas>
-    </div>
-    <div id="spotlight"></div>
-    <div class="bg-parallax-text" id="parallax-bg">
-      <span class="parallax-item">REFORM</span>
-      <span class="parallax-item">ARCHITECT</span>
-      <span class="parallax-item">BUILD</span>
-    </div>
-
-    <!-- Impact Markers -->
-    <div class="impact-marker marker-tl">[ SYSTEMS ARCHITECT ]</div>
-    <div class="impact-marker marker-tr">[ BUILDING v2.0 ]</div>
-    <div class="impact-marker marker-bl">STATUS: OPEN FOR WORK</div>
-    <div class="impact-marker marker-br">GCB_2024</div>
-
-    <!-- Nav -->
-    <nav id="navbar">
-      <div class="nav-logo">G.</div>
-      <div class="nav-links">
-        <a href="#about" class="nav-link magnetic">Profile</a>
-        <a href="#projects" class="nav-link magnetic">Blueprint</a>
-        <a href="#contact" class="nav-link magnetic">Contact</a>
-      </div>
-    </nav>
-
-    <main id="main-content">
-
-      <!-- HERO -->
-      <header id="heroSection">
-        <canvas id="hero-grid"></canvas>
-        <div class="hero-content">
-          <div class="hero-eyebrow">Systems Architect &amp; Civic Technologist</div>
-          <h1 class="hero-name" data-text="Ganesh Chandra Bera"></h1>
-          <div class="hero-divider" id="hero-divider"></div>
-          <p class="hero-subtitle">Full Stack Developer | AI Forensics | Civic Tech</p>
-          <p class="hero-tagline">"I don't build for trends — I build for systems that were never fixed.<br>Code is my blueprint. Reform is the output."</p>
-          <div class="hero-ctas">
-            <button class="cta-btn primary magnetic" data-scroll-to="#projects">View Blueprint</button>
-            <button class="cta-btn secondary magnetic" data-scroll-to="#contact">Open Channel</button>
-          </div>
-        </div>
-        <div class="floating-badges">
-          <span class="badge">CIVIC TECH</span>
-          <span class="badge">AI FORENSICS</span>
-          <span class="badge">DJANGO</span>
-          <span class="badge">FULL STACK</span>
-          <span class="badge">SYSTEMS DESIGN</span>
-          <span class="badge">PYTHON</span>
-          <span class="badge">OPEN SOURCE</span>
-        </div>
-      </header>
-
-      <!-- MARQUEE RIBBON -->
-      <div class="marquee-ribbon" aria-hidden="true">
-        <div class="marquee-track">
-          <span>CIVIC TECH</span><span class="dot">·</span>
-          <span>SYSTEMS DESIGN</span><span class="dot">·</span>
-          <span>FULL STACK</span><span class="dot">·</span>
-          <span>OPEN SOURCE</span><span class="dot">·</span>
-          <span>PROBLEM SOLVER</span><span class="dot">·</span>
-          <span>AI FORENSICS</span><span class="dot">·</span>
-          <span>REFORM ENGINEER</span><span class="dot">·</span>
-          <span>DANGEROUSLY ADAPTABLE</span><span class="dot">·</span>
-          <!-- duplicate for seamless loop -->
-          <span>CIVIC TECH</span><span class="dot">·</span>
-          <span>SYSTEMS DESIGN</span><span class="dot">·</span>
-          <span>FULL STACK</span><span class="dot">·</span>
-          <span>OPEN SOURCE</span><span class="dot">·</span>
-          <span>PROBLEM SOLVER</span><span class="dot">·</span>
-          <span>AI FORENSICS</span><span class="dot">·</span>
-          <span>REFORM ENGINEER</span><span class="dot">·</span>
-          <span>DANGEROUSLY ADAPTABLE</span><span class="dot">·</span>
-        </div>
-      </div>
-
-      <!-- ABOUT -->
-      <section id="about" class="section-wrapper">
-        <div class="section-label"><span class="label-num">01</span> The Architect</div>
-        <div class="bento-container">
-          <div class="bento-item large">
-            <h3>Who I Am</h3>
-            <p>I don't just build projects — I fix things broken in people and systems. I'm the kind of engineer who sees bureaucratic friction and builds a platform to kill it, who sees deepfakes eroding trust and builds the forensic engine to expose them. Occasionally, my overthinking turns into something meaningful instead of another half-baked GitHub repo.</p>
-            <div class="profile-meta">
-              <span>EXPERTISE: CIVIC SYSTEMS & AI FORENSICS</span>
-              <span>STATUS: BUILDING WHAT'S NEXT</span>
-            </div>
-          </div>
-          <div class="bento-item">
-            <h3>What I Do</h3>
-            <div class="expertise-list">
-              <p><strong>Civic Tech:</strong> Building accountability into systems that never had it.</p>
-              <p><strong>AI Forensics:</strong> Exposing fakes, not generating them.</p>
-              <p><strong>Full Stack:</strong> End-to-end engineering, even if duct-taped together at 2 AM.</p>
-            </div>
-          </div>
-          <div class="bento-item">
-            <h3>Tech Stack</h3>
-            <div class="skill-clusters">
-              <div class="skill-group">
-                <strong>Core</strong>
-                <span>C, C++, Python, PHP, JavaScript</span>
-              </div>
-              <div class="skill-group">
-                <strong>Engines</strong>
-                <span>Django, Flask, MySQL, SQLite</span>
-              </div>
-              <div class="skill-group">
-                <strong>Special Ops</strong>
-                <span>ELA, Noise Analysis, Computer Vision, Systems Design</span>
-              </div>
-            </div>
-          </div>
-          <div class="bento-item large">
-            <h3>What Drives Me</h3>
-            <p>Justice, Civic Accountability, and Human-Centric Tech. I don't want AI replacing people — I want it protecting them. Constant self-improvement, like an unfinished software patch that keeps getting better.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE TIMELINE -->
-      <section id="experience" class="section-wrapper" style="padding-top:0;">
-        <div class="section-label"><span class="label-num">02</span> Foundation</div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">SEP 2025</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4>BillAssist — First Build</h4>
-              <p>Built a full billing system from scratch — GST handling, role-based access, receipt generation. First real project. No tutorial, just a problem that needed solving.</p>
-              <span class="timeline-tag">Full Stack · Origin</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">JAN 2026</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4>Sudhaar — Civic Tech</h4>
-              <p>Built a civic grievance platform from the ground up. First real system — accountability baked into code. Presented at an international seminar.</p>
-              <span class="timeline-tag">Civic Tech · Research</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">APR 2026</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4>Drishti AI — Forensic Vision</h4>
-              <p>Pivoted into AI forensics. Built a multi-modal deepfake detection engine with 98% accuracy. From civic tech to digital truth — same mission, different battlefield.</p>
-              <span class="timeline-tag">AI Forensics</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">NOW</div>
-            <div class="timeline-dot active"></div>
-            <div class="timeline-content">
-              <h4>Building What's Next</h4>
-              <p>Student. Builder. 5+ systems shipped in under a year. Still just getting started — looking for problems worth solving. Impact-driven. Execution over ideas.</p>
-              <span class="timeline-tag">Student · Builder</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- STATS -->
-      <div class="stats-row section-wrapper" style="padding-top:0;padding-bottom:0;">
-        <div class="stat-item">
-          <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
-          <p class="stat-label">Systems Shipped</p>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
-          <p class="stat-label">Detection Accuracy</p>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
-          <p class="stat-label">Domains Mastered</p>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="2">0</span><span class="stat-suffix">AM</span>
-          <p class="stat-label">Usual Commit Time</p>
-        </div>
-      </div>
-
-      <!-- PROJECTS — Horizontal Scroll Gallery -->
-      <div class="project-header section-wrapper">
-        <div class="section-label"><span class="label-num">03</span> Blueprint</div>
-      </div>
-      <section id="projects">
-        <div class="gallery-wrap">
-          <div class="gallery-track">
-
-            <!-- 01 — Sudhaar -->
-            <div class="project-panel" data-cursor-label="VIEW">
-              <div class="panel-number">01</div>
-              <div class="panel-image">
-                <img src="/assets/sudhaar.png" alt="Sudhaar — Civic Grievance Platform">
-              </div>
-              <div class="panel-info hero-project">
-                <span class="panel-tag">Civic Tech · Hero Project</span>
-                <h3>Sudhaar</h3>
-                <div class="panel-brief">
-                  <p><strong>Challenge:</strong> Bureaucratic friction and zero accountability in civic reporting.</p>
-                  <p><strong>Solution:</strong> Scalable grievance platform automating governance tracking.</p>
-                  <p><strong>Result:</strong> Stabilized reporting paths and measurable local accountability.</p>
-                </div>
-                <a href="https://github.com/Ganesh-pixel-dev/Sudhaar" target="_blank" class="panel-link magnetic"><span>Source Code →</span></a>
-              </div>
-            </div>
-
-            <!-- 02 — Drishti AI -->
-            <div class="project-panel" data-cursor-label="VIEW">
-              <div class="panel-number">02</div>
-              <div class="panel-image">
-                <img src="/assets/drishti.png" alt="Drishti AI — Deepfake Detection">
-              </div>
-              <div class="panel-info hero-project">
-                <span class="panel-tag">AI Forensics · Hero Project</span>
-                <h3>Drishti AI</h3>
-                <div class="panel-brief">
-                  <p><strong>Challenge:</strong> Deepfakes eroding trust across digital media.</p>
-                  <p><strong>Solution:</strong> Multi-modal vision + pixel math consensus detection.</p>
-                  <p><strong>Result:</strong> 98% localized artifact detection accuracy.</p>
-                </div>
-                <a href="https://github.com/Ganesh-pixel-dev/drishti_ai" target="_blank" class="panel-link magnetic"><span>Source Code →</span></a>
-              </div>
-            </div>
-
-            <!-- 03 — AuraBoard Pro -->
-            <div class="project-panel" data-cursor-label="VIEW">
-              <div class="panel-number">03</div>
-              <div class="panel-image">
-                <img src="/assets/auraboard.png" alt="AuraBoard Pro — Spatial Workstation">
-              </div>
-              <div class="panel-info">
-                <span class="panel-tag">Spatial UI · Gesture Control</span>
-                <h3>AuraBoard Pro</h3>
-                <div class="panel-brief">
-                  <p><strong>Challenge:</strong> Creative tools lacking natural, biological input flow.</p>
-                  <p><strong>Solution:</strong> Zero-latency spatial workstation on a gesture-reactive engine.</p>
-                  <p><strong>Result:</strong> 90% reduction in input jitter for professional workflows.</p>
-                </div>
-                <a href="https://github.com/Ganesh-pixel-dev/-AuraBoard-Pro" target="_blank" class="panel-link magnetic"><span>Source Code →</span></a>
-              </div>
-            </div>
-
-            <!-- 04 — HandConnect -->
-            <div class="project-panel" data-cursor-label="VIEW">
-              <div class="panel-number">04</div>
-              <div class="panel-image">
-                <img src="/assets/handconnect.png" alt="HandConnect — Gesture Communication">
-              </div>
-              <div class="panel-info">
-                <span class="panel-tag">Accessibility · Computer Vision</span>
-                <h3>HandConnect</h3>
-                <div class="panel-brief">
-                  <p><strong>Challenge:</strong> Communication barriers for sign language users.</p>
-                  <p><strong>Solution:</strong> Real-time hand gesture recognition and translation system.</p>
-                  <p><strong>Result:</strong> Bridging communication gaps through computer vision.</p>
-                </div>
-                <a href="https://github.com/Ganesh-pixel-dev/HandConnect-main" target="_blank" class="panel-link magnetic"><span>Source Code →</span></a>
-              </div>
-            </div>
-
-            <!-- 05 — BillAssist -->
-            <div class="project-panel" data-cursor-label="VIEW">
-              <div class="panel-number">05</div>
-              <div class="panel-image">
-                <img src="/assets/billing.png" alt="BillAssist — Billing System">
-              </div>
-              <div class="panel-info">
-                <span class="panel-tag">Business Logic · Full Stack</span>
-                <h3>BillAssist</h3>
-                <div class="panel-brief">
-                  <p><strong>Challenge:</strong> Real-world retail logic — GST, RBAC, audit trails.</p>
-                  <p><strong>Solution:</strong> Billing engine with role-based access and receipt generation.</p>
-                  <p><strong>Result:</strong> Automated GST handling and audit-ready logs for live use.</p>
-                </div>
-                <a href="https://github.com/Ganesh-pixel-dev" target="_blank" class="panel-link magnetic"><span>Source Code →</span></a>
-              </div>
-            </div>
-
-          </div>
-          <div class="gallery-counter">
-            <span id="current-project">01</span> / <span>05</span>
-          </div>
-          <div class="gallery-progress-wrap">
-            <div class="gallery-progress-bar"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="section-wrapper">
-        <div class="section-label"><span class="label-num">04</span> Open Channel</div>
-        <div class="contact-section">
-          <h2 class="contact-heading">Let's Build<br>Something</h2>
-          <p class="contact-typing" data-text="The channel is open. What needs fixing?"><span class="blink">_</span></p>
-          <div class="contact-blocks">
-            <a href="mailto:ganeshchandrabera43@gmail.com" class="contact-block magnetic">
-              <span class="block-label">EMAIL</span>
-              <span class="block-value">ganeshchandrabera43@gmail.com</span>
-            </a>
-            <a href="https://www.linkedin.com/in/ganesh-chandra-bera-67a36a276" target="_blank" class="contact-block magnetic">
-              <span class="block-label">LINKEDIN</span>
-              <span class="block-value">/in/ganesh-chandra-bera</span>
-            </a>
-            <a href="https://github.com/Ganesh-pixel-dev" target="_blank" class="contact-block magnetic">
-              <span class="block-label">GITHUB</span>
-              <span class="block-value">@Ganesh-pixel-dev</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      <p>Designed & Built by Ganesh Chandra Bera — <span>2026</span></p>
-    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
